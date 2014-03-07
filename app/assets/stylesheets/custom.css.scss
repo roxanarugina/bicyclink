@@ -1,0 +1,146 @@
+@import "foundation_and_overrides";
+@import 'foundation-icons';
+
+@font-face{
+	font-family: 'mont_b';
+	src: url('/Montserrat-Bold.ttf');
+}
+
+/*header*/
+
+.top-bar {
+	background: white;
+}
+
+.top-bar i{
+	font-size: 1.7em;
+	color:#8ac007;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+padding: 0 15px;
+line-height: 44px;
+background: #FFFAFA;
+}
+
+.button-group {
+	background: black;
+}
+
+.title-area {
+	margin-left: 20px;
+}
+
+
+/*homepage*/
+
+
+.container {
+background: url(image-path("bikelovers.jpg"));
+height:640px;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-color: white;
+opacity: 0.8;
+}
+
+.headline {
+background-color: #8ac007;
+font-size: 40px;
+opacity: 0.5;
+text-align: center;
+vertical-align: middle;
+border: 25px;
+margin: 0px;
+padding: 10px;
+font-family: mont_b;
+margin-top: 50px;
+}
+
+
+
+h1 {
+	text-align:center;
+	color: white;
+}
+
+
+.circular {
+	vertical-align: middle;
+	width: 250px;
+	height: 250px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background-color: #8ac007; 
+	opacity: 0.7;
+	margin-top: 40px;
+	padding-top: 10px;
+	}
+
+
+.button {
+  background-color: #8ac007; }
+
+  .icon {
+    font-size: 70px;
+	text-align: center;
+	vertical-align: middle;
+  }
+
+
+h4 {
+	color: white;
+	text-align:center;
+}
+
+p {
+	text-align: center;
+	padding: 20px;
+	font-family: mont_b;
+}
+
+
+h3 {
+font-family: mont_b;
+font-size: -webkit-xxx-large;
+text-align: center;
+margin-top: 6rem;
+}
+
+.introduction{
+	background-color: #90EE90;
+	background-size: 100% auto;
+	opacity: 0.7; 
+	font-family: 'mont_b';
+	font-size: 3rem;
+}
+
+.geolocalization{
+	background-color: #FFA07A;
+	background-size: 100% auto;
+	opacity: 0.7; 
+}
+
+.map {
+	height:640px;
+	background: url(image-path("parismap.png"));
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.meetup {
+	height:640px;
+	background: url(image-path("meetup.png"));
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+.announce{
+	background-color: #D3D3D3;
+	background-size: 100% auto;
+	opacity: 0.7; 
+}
