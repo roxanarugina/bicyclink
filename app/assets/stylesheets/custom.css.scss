@@ -90,6 +90,11 @@ h1 {
 	vertical-align: middle;
   }
 
+.icon i{
+	color: black;
+	font-size: 70px;
+}
+
 
 h4 {
 	color: white;
@@ -115,13 +120,14 @@ margin-top: 6rem;
 	background-size: 100% auto;
 	opacity: 0.7; 
 	font-family: 'mont_b';
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .geolocalization{
 	background-color: #FFA07A;
 	background-size: 100% auto;
 	opacity: 0.7; 
+	font-size: 2rem;
 }
 
 .map {
@@ -143,4 +149,22 @@ margin-top: 6rem;
 	background-color: #D3D3D3;
 	background-size: 100% auto;
 	opacity: 0.7; 
+}
+
+/*footer*/
+
+#mc_embed_signup input.button {
+clear: both;
+background-color: #8ac007;
+opacity: 0.7;
+}
+
+ul {
+color: white; 
+}
+
+
+.social-bar em, i {
+font-size: 2rem;
+color: #8ac007;
 }
