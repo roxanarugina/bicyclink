@@ -126,14 +126,14 @@ margin-top: 6rem;
 
 .map {
 	height:640px;
-	background: url(image-path("parismap.png"));
+	background: url(/parismap.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
 .meetup {
 	height:640px;
-	background: url(image-path("meetup.png"));
+	background: url(/meetup.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
