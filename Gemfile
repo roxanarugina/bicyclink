@@ -29,7 +29,6 @@ gem 'jbuilder', '~> 1.2'
 gem 'foundation-rails'
 gem 'foundation-icons-sass-rails'
 
-gem 'rails_serve_static_assets'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -43,6 +42,7 @@ end
 group :production do
 	gem 'pg', '0.15.1'
 	gem 'rails_12factor'
+	gem 'rails_serve_static_assets'
 end
 
 # Use ActiveModel has_secure_password
