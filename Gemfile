@@ -40,7 +40,8 @@ group :development do
 
 	#gem pour le debuggage
 	gem  'jazz_hands'
-	gem  'betters_errors'
+	gem  'better_errors'
+end
 
 group :production do
 	gem 'pg', '0.15.1'
