@@ -37,7 +37,10 @@ end
 
 group :development do
 	gem 'sqlite3'
-end 
+
+	#gem pour le debuggage
+	gem  'jazz_hands'
+	gem  'betters_errors'
 
 group :production do
 	gem 'pg', '0.15.1'
@@ -57,3 +60,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# gem pour avoir des logs plus calme 
+ gem 'quiet_assets'
+
+
