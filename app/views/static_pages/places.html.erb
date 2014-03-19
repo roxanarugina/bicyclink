@@ -1,6 +1,15 @@
+
+<!-- Lien pour avoir les librairies leaflets dans le cas d'utilisation en javascript -->
+
 <%= javascript_include_tag "http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js" %>
 
 <%= stylesheet_link_tag "http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" %>
+
+<!-- Lien pour avoir les librairies cartodb dans le cas d'utilisation en javascript -->
+
+<%= stylesheet_link_tag "http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" %>
+
+<%= javascript_include_tag "http://libs.cartocdn.com/cartodb.js/v3/cartodb.js" %>
 
 
 <div class="geolocalization">
@@ -8,18 +17,42 @@
 	We are working hard on Bicyclink app, coming soon to help you find bike-friendly places and events in your city. Meanwhile we are organising crazy meetups with bike-lovers. So join us & keep riding! ________________________________________________________________
 <div class="map">
   </div>
+
 <!-- 
   La carte est integre par l'intermediaire d'un iframe, il s'agit d'une balise html qui permet l'insertion de contenu interactif. 
   La iframe ci dessous est genere par cartodb par mon compte.
   Les etapes sont les suivantes 
  	1.Creer la carte et la base de donne
- 	2.Dans l'onglet options choisir share
- 	3.Donner une description a la carte - un bouton publish sera genere dans lequel on peut faire nos modifs. Des liens sont présents tels que l'accès a l'Api etc..
+ 	2.Dans l'onglet options choisir visualize
+ 	3.Create a vizualisation
+ 	4.Cliquer sur share
+ 	5.Donner une description a la visualisation - un bouton publish et embed est present en bas. On peut faire nos modifs. Des liens sont présents tels que l'accès a l'Api etc..
 
  	Leafleet n'est pas utilise
  -->
+
+
+
+</h3>
+ </div>
+
+<h4>Carte generé par Iframe</h4>
+
   <iframe width='100%' height='520' frameborder='0' src='http://mosleymos.cartodb.com/viz/0c03408a-af55-11e3-9dd3-0e230854a1cb/embed_map?title=true&description=true&search=false&shareable=true&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&fullscreen=true&sublayer_options=1&sql=&sw_lat=41.93497650054668&sw_lon=-15.029296875&ne_lat=53.54030739150027&ne_lon=21.62109375' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
   </iframe>
 
-</h3>
-</div>
+<h4>Carte généré par Javascript Cartodb + leaflet</h4>
+
+  <div id="map">
+
+  </div>
+
+  <%= javascript_tag "carte" %>
+
+
+  <div id="map2"></div>
+
+
+<h4>Carte genere par Javascript et CartoDb</h4>
+
+  <%= javascript_tag "carte2db" %>
