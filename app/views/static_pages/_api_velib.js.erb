@@ -1,0 +1,3 @@
+var velib_json = <%= Net::HTTP.get_response(URI('https://api.jcdecaux.com/vls/v1/stations?contract=Paris&apiKey=73643b4f6d48a45860637093a01c457fe8401860')) %>
+
+<%= velib_json = JSON.parse string %>
