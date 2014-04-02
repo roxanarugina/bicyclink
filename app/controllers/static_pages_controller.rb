@@ -1,3 +1,4 @@
+require 'net/http'
 class StaticPagesController < ApplicationController
   def home
   end
