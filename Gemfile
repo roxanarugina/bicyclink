@@ -4,6 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 
+#Form
+gem 'simple_form'
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
