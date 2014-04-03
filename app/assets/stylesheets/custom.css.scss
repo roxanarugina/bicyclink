@@ -9,23 +9,36 @@
 /*header*/
 
 .top-bar {
-	background: white;
+	background-color: white;
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
+
 
 .top-bar i{
 	font-size: 1.7em;
 	color:#8ac007;
+	margin-right: 5px;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
 padding: 0 15px;
 line-height: 44px;
 background: #FFFAFA;
+color: black;
+font-family: 'mont_b';
 }
 
-.button-group {
+.top-bar-section ul {
 	background: black;
 }
+
+
+.button-group {
+	color: black;
+}
+
 
 .title-area {
 	margin-left: 20px;
@@ -34,44 +47,48 @@ background: #FFFAFA;
 /*homepage*/
 
 .container {
-background: url(/bikelovers.jpg);
-height:640px;
+background-image: url(/bikelovers.jpg);
+position: absolute;
+left: 0px; top: 10 px; right :0px;
+background-size: cover;
+height: 680px;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 background-color: white;
-opacity: 0.8;
 }
 
 .headline {
-background-color: #8ac007;
+background-color: #161615;
 font-size: 40px;
-opacity: 0.5;
 text-align: center;
 vertical-align: middle;
 border: 25px;
-margin: 0px;
 padding: 10px;
 font-family: mont_b;
-margin-top: 50px;
+margin-top: 60px;
+opacity: 0.7;
 }
 
 h1 {
 	text-align:center;
 	color: white;
+	font-family: mont_b;
+	font-size: x-large;
 }
 
 .circular {
 	vertical-align: middle;
-	width: 250px;
-	height: 250px;
+	width: 150px;
+	height: 150px;
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background-color: #8ac007; 
-	opacity: 0.7;
-	margin-top: 40px;
+	background-color: #8ac007;
+	opacity: 0.9;
+	margin-top: 250px;
+	margin-left: 100px;
 	padding-top: 10px;
 	}
 
@@ -85,7 +102,7 @@ h1 {
   }
 
 .icon i{
-	color: black;
+	color: white;
 	font-size: 70px;
 }
 
@@ -93,12 +110,14 @@ h1 {
 h4 {
 	color: white;
 	text-align:center;
+	font-family: mont_B;
 }
 
 p {
 	text-align: center;
 	padding: 20px;
 	font-family: mont_b;
+	color: white;
 }
 
 h3 {
@@ -144,16 +163,40 @@ margin-top: 6rem;
 
 /*footer*/
 
+.footer{
+font-size: 40px;
+text-align: center;
+vertical-align: middle;
+border: 25px;
+padding: 50px;
+font-family: mont_b;
+margin-top: 60px;
+}
+
 #mc_embed_signup input.button {
 clear: both;
 background-color: #8ac007;
 opacity: 0.7;
 }
 
+#mce-EMAIL {
+	color: #FAE128;
+	opacity: 0.7;
+}
+
+#mc_embed_signup label{
+	color: #8ac007;
+	font-size: large;
+}
+
+
 ul {
 color: white; 
 }
 
+.push-8{
+	margin-top: 40px;
+}
 
 .social-bar em, i {
 font-size: 2rem;
@@ -163,4 +206,30 @@ color: #8ac007;
 .social-bar li {
 display:inline;
 padding-right: 12px;
+}
+
+.button {
+background-color: white;
+}
+
+.button.radius {
+-webkit-border-radius: 3px;
+border-radius: 20px;
+}
+
+.column.small-centered, .columns.small-centered{
+	margin-top:120px;
+}
+
+button, .button{
+	color:black;
+}
+
+.button.large {
+padding-top: 1.125rem;
+padding-right: 2.25rem;
+padding-bottom: 1.1875rem;
+padding-left: 2.25rem;
+font-size: 2.25rem;
+font-family: mont_b;
 }

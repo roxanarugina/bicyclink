@@ -9,20 +9,31 @@
     <!-- Right Nav Section -->
     
     <ul class="right button-group">
-      <li><%= link_to "/" do %>
-        <i class="fi-home"></i>
+      <li><%= link_to "/" do %> 
+        <i class="fi-home"></i> home
         <%end%></li>
-        <li><%= link_to static_pages_events_path do %>
-          <i class="fi-calendar"></i>
+        <li><%= link_to  "http://www.meetup.com/Bicyclink/" do %>
+          <i class="fi-calendar"></i> events
           <%end%></li>
           <li><%= link_to static_pages_places_path do %>
-            <i class="fi-marker"></i>
+            <i class="fi-marker"></i> places
             <%end%></li>
             <li><%= link_to static_pages_about_path do %>
-              <i class="fi-info"></i>
+              <i class="fi-info"></i> about
               <%end%></li>
-            </div>
-          </div>
+            <li>
+              <%= link_to "http://www.twitter.com/bicyclinks" do %>
+              <i class="fi-social-twitter"></i>
+              <%end%>
+            </li>
+
+            <li>
+              <%= link_to "http://www.facebook.com/bicyclink" do %>
+              <i class="fi-social-facebook", color: #8ac007;></i>
+              <%end%>
+            </li>
+
+          </ul>  
         </ul>
       </section>
     </nav>
