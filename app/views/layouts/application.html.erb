@@ -9,6 +9,20 @@
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "vendor/modernizr" %>
   <%= csrf_meta_tags %>
+
+  <!-- Lien pour avoir les librairies leaflets dans le cas d'utilisation en javascript -->
+  <%= javascript_include_tag "http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js" %>
+  <%= stylesheet_link_tag "http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" %>
+  
+  <!-- Lien geoloc -->
+  <link rel="stylesheet" href="//rawgithub.com/domoritz/leaflet-locatecontrol/gh-pages/src/L.Control.Locate.css" />
+  <script src="//rawgithub.com/domoritz/leaflet-locatecontrol/gh-pages/src/L.Control.Locate.js" ></script>
+
+  <!--[if lt IE 9]>
+      <link rel="stylesheet" href="//rawgithub.com/domoritz/leaflet-locatecontrol/gh-pages/src/L.Control.Locate.ie.css"/>
+  <![endif]-->
+
+
 </head>
 
 <body>

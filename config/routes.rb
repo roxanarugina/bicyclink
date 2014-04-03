@@ -1,4 +1,7 @@
 Bicyclink::Application.routes.draw do
+  get "point_of_interests/create"
+ resources :point_of_interests
+
   # get "static_pages/home"
   get "static_pages/places"
   get "static_pages/events"

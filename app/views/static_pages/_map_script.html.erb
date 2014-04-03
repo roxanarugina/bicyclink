@@ -8,11 +8,32 @@ var map = L.map('map').setView([48.87242997325711, 2.355489390173873], 13);
 var lc = L.control.locate({position: 'topleft'}).addTo(map);
 
 var velib = <%= @stations %>
+var poi = <%= @coordinates %>
+
+
+// Afficher les staions Velib
+// var markers = []
+// for (index = 0; index < velib.length; ++index) {
+//     marker = L.marker(velib[index])
+//     marker.addTo(map);
+//     markers.push(marker)
+// };
+
+
+// Afficher une icone spécifique pour les entrées du formulaire
+// var icon = L.icon({
+//     iconUrl: '/logo_fb.png',
+//     iconSize:     [38, 95], // size of the icon
+//     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+//     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+// });
+
+//, {icon: icon}
 
 
 var markers = []
-for (index = 0; index < velib.length; ++index) {
-    marker = L.marker(velib[index])
+for (index = 0; index < poi.length; ++index) {
+    marker = L.marker(poi[index])
     marker.addTo(map);
     markers.push(marker)
 };
