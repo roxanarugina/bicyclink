@@ -12,6 +12,10 @@ class StaticPagesController < ApplicationController
     @stations << [station["position"]["lat"], station["position"]["lng"]]
 
     @point_of_interest = PointOfInterest.new
+    @point_of_interests = PointOfInterest.all
+    
+    # fill bounds: http://leafletjs.com/reference.html#latlngbounds
+    @coordinates = @point_of_interests.map{ |l| [l.latitude, l.longitude] }
     end
 
 
