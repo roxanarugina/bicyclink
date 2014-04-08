@@ -1,10 +1,33 @@
-<%= simple_form_for(@point_of_interest) do |poi| %>
+<%= form_for(@point_of_interest) do |poi| %>
 
   <div class="form-inputs">
-   	<%= poi.text_field :name, :autofocus => true, placeholder: 'Hotspot' %>
-   	<%= poi.text_field :address, placeholder: 'Address'  %>
-   	<%= poi.text_field :description, placeholder: 'Description' %>
-   	<%= poi.select :category, ['foo', 'bar', 'baz', 'qux'], :include_blank => true %>
+   	<%= poi.label(:name, "Hotspot") %>
+  	<%= poi.text_field(:name) %>
+
+  	<%= poi.label(:address, "Address") %>
+  	<%= poi.text_field(:address) %>
+
+  	<%= poi.label(:description, "Description") %>
+  	<%= poi.text_field(:description) %>
+
+
+    <%= poi.label(:cat_shop, "Shop") %>
+    <%= poi.check_box :cat_shop, checked_value: true, unchecked_value: false %>
+    
+    <%= poi.label(:cat_cafe, "Cafe") %>
+    <%= poi.check_box :cat_cafe, checked_value: true, unchecked_value: false %>
+    
+    <%= poi.label(:cat_event, "Event") %>
+    <%= poi.check_box :cat_event, checked_value: true, unchecked_value: false %>
+    
+    <%= poi.label(:cat_rent_a_bike, "Rent a bike") %>
+    <%= poi.check_box :cat_rent_a_bike, checked_value: true, unchecked_value: false %>
+	
+	<%= poi.label(:cat_bike_station, "Bike station") %>
+	<%= poi.check_box :cat_bike_station, checked_value: true, unchecked_value: false %>
+	
+	<%= poi.label(:cat_unsafe, "Unsafe zone") %>
+	<%= poi.check_box :cat_unsafe, checked_value: true, unchecked_value: false %>
   </div>
 
   <div class="form-actions">
