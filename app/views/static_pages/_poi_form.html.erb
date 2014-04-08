@@ -4,6 +4,7 @@
    	<%= poi.text_field :name, :autofocus => true, placeholder: 'Hotspot' %>
    	<%= poi.text_field :address, placeholder: 'Address'  %>
    	<%= poi.text_field :description, placeholder: 'Description' %>
+   	<%= poi.select :category, ['foo', 'bar', 'baz', 'qux'], :include_blank => true %>
   </div>
 
   <div class="form-actions">
