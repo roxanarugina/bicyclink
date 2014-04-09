@@ -10,6 +10,9 @@
   	<%= poi.label(:description, "Description") %>
   	<%= poi.text_field(:description) %>
 
+  	<%= poi.label(:cat_repair, "Repair") %>
+    <%= poi.check_box :cat_repair, checked_value: true, unchecked_value: false %>
+
 
     <%= poi.label(:cat_shop, "Shop") %>
     <%= poi.check_box :cat_shop, checked_value: true, unchecked_value: false %>
